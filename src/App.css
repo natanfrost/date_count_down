@@ -1,0 +1,26 @@
+body {
+    text-align: center;
+    margin-top: 5%;  
+    background-color:antiquewhite;  
+}
+
+.App-title{
+    font-size: 50px;
+    margin-bottom: 5%;
+}
+
+.App-days, .App-hours, .App-minutes, .App-seconds{
+    font-size: 25px;
+    display: inline;    
+}
+
+.Deadline-input{    
+    font-size:  15px;
+    font-style: italic;
+    text-align: center;
+    margin: 2%;
+}
+
+.rc-calendar{
+    margin: auto;
+}
