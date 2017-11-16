@@ -1,6 +1,6 @@
 {
   "name": "countdown",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "homepage": "https://natanfrost.github.io/date_count_down/",
   "dependencies": {
@@ -8,7 +8,6 @@
     "rc-calendar": "^9.2.0",
     "react": "^16.1.1",
     "react-addons-css-transition-group": "^15.6.2",
-    "react-bootstrap": "^0.31.5",
     "react-dom": "^16.1.1",
     "react-scripts": "1.0.17"
   },
