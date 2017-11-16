@@ -1,7 +1,11 @@
 body {
     text-align: center;
     margin-top: 5%;  
+<<<<<<< HEAD
     background-color:antiquewhite;   
+=======
+    background-color:antiquewhite;  
+>>>>>>> 34407b662acc67c9e1b0307b1ed5f525dc447c76
 }
 
 .App-title{
@@ -18,11 +22,16 @@ body {
     font-size:  15px;
     font-style: italic;
     text-align: center;
+<<<<<<< HEAD
     margin-top: 2%;
+=======
+    margin: 2%;
+>>>>>>> 34407b662acc67c9e1b0307b1ed5f525dc447c76
 }
 
 .rc-calendar{
     margin: auto;
+<<<<<<< HEAD
 }
 
 span{
@@ -44,4 +53,6 @@ span{
     .rc-calendar{
         width: 100% !important;
     }
+=======
+>>>>>>> 34407b662acc67c9e1b0307b1ed5f525dc447c76
 }

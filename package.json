@@ -9,7 +9,13 @@
     "react": "^16.1.1",
     "react-addons-css-transition-group": "^15.6.2",
     "react-bootstrap": "^0.31.5",
+<<<<<<< HEAD
     "react-dom": "^16.1.1",
+=======
+    "react-bootstrap-date-picker": "^5.1.0",
+    "react-dom": "^16.1.1",
+    "react-infinite-calendar": "^2.3.1",
+>>>>>>> 34407b662acc67c9e1b0307b1ed5f525dc447c76
     "react-scripts": "1.0.17"
   },
   "scripts": {
