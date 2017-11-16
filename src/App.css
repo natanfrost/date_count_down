@@ -1,0 +1,47 @@
+body {
+    text-align: center;
+    margin-top: 5%;  
+    background-color:antiquewhite;   
+}
+
+.App-title{
+    font-size: 50px;
+    margin-bottom: 5%;
+}
+
+.App-days, .App-hours, .App-minutes, .App-seconds{
+    font-size: 25px;
+    display: inline;    
+}
+
+.Deadline-input{    
+    font-size:  15px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.rc-calendar{
+    margin: auto;
+}
+
+span{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 5px;
+    font-size: 15px;
+    font-style: italic;
+}
+
+@media screen and (max-width: 520px) and (min-width: 300px) {
+    .App-days, .App-hours, .App-minutes, .App-seconds{
+        font-size: 15px;
+        display: inline;    
+    }
+    .App-title{
+        font-size: 20px;
+        margin-bottom: 5%;
+    }
+    .rc-calendar{
+        width: 100% !important;
+    }
+}
