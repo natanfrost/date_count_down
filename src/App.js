@@ -1,7 +1,6 @@
 import './App.css';
 import React, { Component } from 'react';
 import Clock from './Clock';
-import { Form, FormControl } from 'react-bootstrap';
 import Calendar from 'rc-calendar';
 import 'rc-calendar/assets/index.css';
 
@@ -23,15 +22,14 @@ class App extends Component {
         this.setState({deadline: month + ' ' + day + ', ' + year});
     }
 
-    render(){
-
+    render(){ 
         return (
-            <Form inline>
-                <div className="App-title"><strong>Countdown to {this.state.deadline}</strong></div>
+            <div> 
+                <div className="title"><strong>Countdown to {this.state.deadline}</strong></div>
                 <div> 
                     <Clock deadline={this.state.deadline} />                                                         
                     <div>                        
-                        <FormControl 
+                        <input 
                             readOnly
                             className='Deadline-input'                         
                             value={this.state.deadline}
@@ -45,7 +43,7 @@ class App extends Component {
                     </div>                    
 
                 </div>
-            </Form>
+            </div>
         )        
     }
 }
