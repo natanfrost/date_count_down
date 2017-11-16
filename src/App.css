@@ -1,10 +1,12 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700,400);
+* {
+  box-sizing: border-box;
+}
 body {
-    text-align: center;
-    margin-top: 5%;  
-    background-color:antiquewhite;   
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    line-height: 1.42857143;
-    color: #333;
+  text-align: center;
+  background: #E3DEC1;
+  color: #B94629;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .title{
@@ -17,17 +19,12 @@ body {
     display: inline;    
 }
 
-input{    
-    background-color: #eee;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size:  15px;
-    font-style: italic;
-    text-align: center;
-    margin-top: 2%;
+i{
+    margin-top: 5%;
+    cursor: pointer;
 }
 
-.rc-calendar{
+.rc-calendar{    
     margin: auto;
 }
 

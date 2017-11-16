@@ -9,8 +9,9 @@ class App extends Component {
         super(props);
         this.handleDateSelected = this.handleDateSelected.bind(this);
         this.state = {
-            deadline: 'December 25, 2017',
-            opacity: 0
+            deadline: 'January 1, 2018',
+            visibility: 'hidden',
+            opacity: '0'
         };        
     }
 
@@ -18,7 +19,7 @@ class App extends Component {
         const month = new Date(e._d).toLocaleDateString('en-us', { month: 'long' });
         const day = new Date(e._d).toLocaleDateString('en-us', { day: '2-digit' });
         const year = new Date(e._d).toLocaleDateString('en-us', { year: 'numeric' });
-        this.setState({opacity: 0});           
+        this.setState({visibility:'hidden', opacity: '0'});
         this.setState({deadline: month + ' ' + day + ', ' + year});
     }
 
@@ -28,17 +29,19 @@ class App extends Component {
                 <div className="title"><strong>Countdown to {this.state.deadline}</strong></div>
                 <div> 
                     <Clock deadline={this.state.deadline} />                                                         
-                    <div>                        
-                        <input 
-                            readOnly
-                            className='Deadline-input'                         
-                            value={this.state.deadline}
-                            onClick={e => this.setState({opacity: 1})} 
-                        />
+                    <div>                                                
+                        <i onClick={e => this.setState({visibility:'visible', opacity: '1'})}  className="fa fa-calendar fa-5x" aria-hidden="true"></i>
                         <br></br>
-                        <span>Click the input above to change deadline</span>                        
-                        <div style={{opacity: this.state.opacity, transition: "opacity 1s"}}>                            
-                            <Calendar onChange={this.handleDateSelected}/>                            
+                        <span>(Click to change deadline)</span>                        
+                        <div className={this.state.calendarVisibility}>                            
+                            <Calendar 
+                                onChange={this.handleDateSelected} 
+                                style={{
+                                    visibility: this.state.visibility, 
+                                    opacity: this.state.opacity, 
+                                    transition: "opacity 1s"
+                                }}
+                            />                            
                         </div>                
                     </div>                    
 
