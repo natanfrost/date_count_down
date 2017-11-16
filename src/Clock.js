@@ -31,7 +31,6 @@ class Clock extends Component {
     }
 
     leading0(num){
-<<<<<<< HEAD
         if((num >= 0 && num < 10)){
             return '0' + num ;
         }
@@ -41,9 +40,6 @@ class Clock extends Component {
         else{
             return num;
         }
-=======
-        return num > 10 ? num : '0' + num;
->>>>>>> 34407b662acc67c9e1b0307b1ed5f525dc447c76
     }
 
     render(){        
